@@ -1,0 +1,122 @@
+@import "./colors.scss";
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 915px) {
+  .who-we-r > p {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  nav {
+    > h1 {
+      display: none;
+    }
+  }
+  .who-we-r {
+    width: 80%;
+  }
+  .brands {
+    width: 80%;
+  }
+
+  .footer {
+  
+    grid-template-columns: 1fr;
+    height: 40vh;
+
+    > .left > h1 {
+      color: rgb(84, 84, 237);
+    }
+  }
+  .right > div {
+    flex-direction: column;
+  }
+}
+
+/* Phone */
+
+@media screen and (max-width: 425px) {
+  nav {
+    .menubtn {
+      margin: 0 5px;
+    }
+  }
+  .home > main {
+    align-items: center;
+    > h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .home2 {
+    margin-top: -30px;
+    height: 100vh;
+    padding: 0 !important;
+    flex-direction: column;
+
+    > img {
+      width: 100%;
+    }
+
+    .para {
+      width: 100%;
+      text-align: justify;
+      padding: 30px;
+
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .home3 {
+    height: 100%;
+    .who-we-r {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+
+      > p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .home4 {
+    text-align: center;
+    height: 100%;
+    padding: 0;
+
+    .brands {
+      width: 100%;
+      border-radius: 5px;
+      height: 100%;
+    }
+  }
+
+  .Contact {
+    padding: 0;
+  }
+  .main {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+
+    > h1 {
+      margin-bottom: 10px;
+    }
+
+    > form {
+      margin: 0;
+
+      > div {
+        width: auto;
+      }
+    }
+  }
+}

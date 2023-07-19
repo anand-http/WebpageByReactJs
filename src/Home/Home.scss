@@ -1,0 +1,166 @@
+@import "../colors.scss";
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+
+  main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+
+    h1 {
+      font: 400 6rem $text1;
+      color: $first;
+    }
+    p {
+      font: 900 1rem $text1;
+      color: $first;
+    }
+  }
+  &::before {
+    content: "";
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url(../assets/1.png);
+    border-radius: 0 0 200px 200px;
+  }
+}
+
+.home2 {
+  padding: 500px 0 !important;
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 30%;
+    animation: imgup 0.7s linear infinite alternate;
+  }
+
+  .para {
+    width: 50%;
+    text-align: justify;
+
+    p {
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      line-height: 30px !important;
+      font: 100 1.2rem $first;
+      color: $first;
+    }
+  }
+}
+
+@keyframes imgup {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.home3 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  display: flex;
+  align-items: center;
+
+  .who-we-r {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 200px 200px 0;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80vh;
+    background-color: $first;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+  }
+
+  p {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font: 400 1.2rem $text1;
+    padding: 40px;
+  }
+}
+
+.home4 {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  background-color: $second;
+  justify-content: flex-end;
+  align-items: center;
+
+  .brands {
+    background-color: $third;
+    width: 70%;
+    height: 100%;
+    padding-top: 1rem   ;
+    border-radius: 200px 0 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      text-transform: uppercase;
+      color: $first;
+      border-bottom: 3px solid white;
+      padding: 0.5rem;
+      width: 140px;
+    }
+
+    article {
+      display: flex;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      div {
+        animation: imgup 0.7s linear infinite alternate;
+        margin: 1rem;
+        width: 10rem;
+        height: 10rem;
+        background-color: $first;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $dark;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          filter: invert(1);
+        }
+
+        svg {
+          font-size: 4rem;
+        }
+        p {
+          font: 900 1.2rem $third;
+        }
+      }
+    }
+  }
+}

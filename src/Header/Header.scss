@@ -1,0 +1,28 @@
+@import "../colors.scss";
+nav {
+  padding: 1.5rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3    );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.right-part {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.menubtn {
+  margin-right: 25px;
+  font-size: 15px;
+  color:$dark;
+  font-weight: 600;
+
+  &:hover {
+    color: $third;
+  }
+}
